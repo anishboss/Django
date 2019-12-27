@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<table cellpadding="10" border="1">
+<thead><tr><td>Name</td><td>Email</td><td>position</td></tr>
+{% for employee in employees%}
+<td>
+{{employee.name}}
+</td>
+<td>{{employee.email}}</td>
+<td>
+{{employee.position}}
+</td>
+{% endfor %}
+</table>
+{% endblock content %}
