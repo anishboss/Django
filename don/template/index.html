@@ -4,7 +4,8 @@
 <form action="" method="POST">
 {% csrf_token %}
 {{employee|crispy}}
-<button>submit</button>
+<button href="{%url "list" %}">submit</button>
+<button><a href="{%url "list"%}">Back</a><button>
 </form>
 
 {% endblock content %}
